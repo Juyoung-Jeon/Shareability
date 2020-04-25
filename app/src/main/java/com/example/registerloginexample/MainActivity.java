@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         tv_pass = findViewById(R.id.tv_pass);
 
 
+        // 받아오기 위한 intent
         Intent intent = getIntent();
         String userID = intent.getStringExtra("userID");
         String userPass = intent.getStringExtra("userPass");
